@@ -5,6 +5,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # Environnements virtuels (recommandé pour isoler tes dépendances)
 .venv/
