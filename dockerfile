@@ -1,1 +1,5 @@
 FROM debian:trixie-backports
+ARG USERNAME
+ARG USERID
+ARG GROUPNAME
+ARG GROUPID
