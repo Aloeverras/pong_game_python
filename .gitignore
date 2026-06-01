@@ -12,6 +12,7 @@ __pycache__/
 venv/
 ENV/
 env/
+.env
 
 # Distribution / Emballage (si tu transformes ton jeu en exécutable)
 develop-eggs/
