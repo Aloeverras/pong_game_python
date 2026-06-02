@@ -1,5 +1,7 @@
 FROM debian:trixie-backports
 
+# env variables
+
 # argumens 
 
 ARG USERNAME
