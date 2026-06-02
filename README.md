@@ -1,7 +1,8 @@
-### Pong game python
+# Pong game python
 
- ## git section :
-    branchs :
-        - **main**
-        - dev
-        - feature/docker
+## git section :
+
+branchs :
+- **main**
+- dev
+- feature/docker
