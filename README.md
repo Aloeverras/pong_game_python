@@ -3,6 +3,9 @@
 ## git section :
 
 branchs :
-- **main**
+- **MAIN**
 - dev
 - feature/docker
+
+
+## docker section :
