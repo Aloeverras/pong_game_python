@@ -15,7 +15,7 @@ ARG PACKAGES
 # running dockerfile
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends sudo ${PACKAGES}&& \
+    apt-get install -y --no-install-recommends sudo ${PACKAGES} && \
     apt-get upgrade && \
     sudo groupadd -g $GROUPID $GROUPNAME && \
     sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME} && \
@@ -23,6 +23,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+WORKDIR /workspace    
 
 USER ${USERNAME}  
 
