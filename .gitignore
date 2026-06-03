@@ -80,3 +80,5 @@ ehthumbs.db
 Desktop.ini
 
 notes.txt
+.env
+.dockerignore

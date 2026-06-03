@@ -1,2 +1,13 @@
 services:
   devcontainer:
+    image: python_game_devcontainer:1.0.0.0
+    tty : true
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USERNAME : "${USERNAME}"
+        USERID : "${USERID}"
+        GROUPNAME : "${GROUPNAME}"
+        GROUPID : "${GROUPID}"
+        PACKAGES : "git python3"
