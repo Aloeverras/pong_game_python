@@ -21,6 +21,8 @@ RUN apt-get update && \
     sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME}
 
 
-USER ${USERNAME}    
+USER ${USERNAME}  
+
+EXPOSE 8080
 
 CMD ["/bin/bash"]
