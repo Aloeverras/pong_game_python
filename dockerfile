@@ -15,6 +15,7 @@ ARG PACKAGES
 # running dockerfile
 
 RUN apt-get update && \
-    apt-get install -y --no-recommendes sudo ${PACKAGES}
+    apt-get install -y --no-recommendes sudo ${PACKAGES} && \
+    apt-get upgrade
 
 CMD ["/bin/bash"]
