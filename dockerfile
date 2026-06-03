@@ -16,6 +16,7 @@ ARG PACKAGES
 
 RUN apt-get update && \
     apt-get install -y --no-recommendes sudo ${PACKAGES} && \
-    apt-get upgrade
+    apt-get upgrade && \
+    sudo groupadd -g $GROUPID $GROUPNAME 
 
 CMD ["/bin/bash"]
