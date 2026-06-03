@@ -20,4 +20,7 @@ RUN apt-get update && \
     sudo groupadd -g $GROUPID $GROUPNAME && \
     sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME}
 
+
+USER ${USERNAME}    
+
 CMD ["/bin/bash"]
