@@ -1,10 +1,11 @@
 services:
   devcontainer:
+    image: python_game_devcontainer:1.0.0.0
     build:
       context: .
       dockerfile: Dockerfile
       args:
-        USERNAME : ${USERNAME}
-        USERID : ${USERID}
-        GROUPNAME : ${GROUPNAME}
-        GROUPID : ${GROUPID}
+        USERNAME : "${USERNAME}"
+        USERID : "${USERID}"
+        GROUPNAME : "${GROUPNAME}"
+        GROUPID : "${GROUPID}"
