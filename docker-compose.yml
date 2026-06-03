@@ -3,3 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        USERNAME : ${USERNAME}
+        USERID : ${USERID}
+        GROUPNAME : ${GROUPNAME}
+        GROUPID : ${GROUPID}
