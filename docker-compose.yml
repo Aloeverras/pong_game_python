@@ -10,3 +10,4 @@ services:
         USERID : "${USERID}"
         GROUPNAME : "${GROUPNAME}"
         GROUPID : "${GROUPID}"
+        PACKAGES : "git python3"

@@ -14,7 +14,8 @@ ARG PACKAGES
 
 # running dockerfile
 
-RUN apt-get update && \
+RUN /bin/bash -c "set -eux" && \
+    apt-get update && \
     apt-get install -y --no-install-recommends sudo ${PACKAGES} && \
     apt-get upgrade && \
     sudo groupadd -g $GROUPID $GROUPNAME && \
