@@ -18,7 +18,10 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends sudo ${PACKAGES}&& \
     apt-get upgrade && \
     sudo groupadd -g $GROUPID $GROUPNAME && \
-    sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME}
+    sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME} && \
+    # clean commands \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 
 USER ${USERNAME}  
