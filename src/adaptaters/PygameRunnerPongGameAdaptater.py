@@ -7,10 +7,13 @@ class PygameRunnerPongGameAdaptater(RunnerPongGamePort):
         
         pygame.init()
         
+        width = 800
+        height = width
+        
         white = (255, 255, 255)
         black = (0, 0, 0)
         
-        screen = pygame.display.set_mode((800, 800))
+        screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Pong")
         
         speed_ball_x = 7 * (-1) **(pygame.time.get_ticks() % 2)
