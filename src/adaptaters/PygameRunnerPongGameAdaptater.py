@@ -28,3 +28,5 @@ class PygameRunnerPongGameAdaptater(RunnerPongGamePort):
         scrore_player1 = 0
         scrore_player2 = 0
         police = pygame.font.Font(None, 36)
+        
+        time = pygame.time.Clock()
