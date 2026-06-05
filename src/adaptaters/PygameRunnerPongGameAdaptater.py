@@ -22,3 +22,5 @@ class PygameRunnerPongGameAdaptater(RunnerPongGamePort):
         palette_speed = 7
         
         ball = pygame.Rect(width // 2 -15, height // 2 -15, 30, 30)
+        player1 = pygame.Rect(width - 20, height // 2 - 70, 10, 140)
+        player2 = pygame.Rect(10, height // 2 - 70, 10, 140)
