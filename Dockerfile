@@ -24,7 +24,9 @@ RUN /bin/bash -c "set -eux" && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /workspace    
+WORKDIR /workspace   
+
+COPY . .
 
 USER ${USERNAME}  
 
