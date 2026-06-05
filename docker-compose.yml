@@ -11,5 +11,12 @@ services:
         GROUPNAME : "${GROUPNAME}"
         GROUPID : "${GROUPID}"
         PACKAGES : " git python3 python3-pip python3-venv build-essential python3-dev libffi-dev "
+    environment:
+      - DISPLAY=:0
+      - WAYLAND_DISPLAY=wayland-0
+      - XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
+      - PULSE_SERVER=/mnt/wslg/PulseServer
     volumes:
-      - .:/workspace    
+      - .:/workspace 
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /mnt/wslg:/mnt/wslg   
