@@ -18,7 +18,16 @@
                 "eamodio.gitlens",
                 "christian-kohler.path-intellisense"
             ],
-            "settings": {}
+            "settings": {
+                // editor settings
+                "editor.cursorBlinking": "solid",
+                "editor.smoothScrolling": true,
+                "editor.minimap.enabled": false,
+                "editor.renderLineHighlight": "all",
+                "editor.formatOnSave": true,
+                "editor.bracketPairColorization.enabled": true,
+                "editor.guides.bracketPairs": "active"
+            }
         }
     }
 }
