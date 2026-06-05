@@ -2,5 +2,11 @@
     "name" : "Pong game devcontainer",
     "service" : "devcontainer",
     "dockerComposeFile" : "../docker-compose.yml",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {}
+        }
+    }
 }
