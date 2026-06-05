@@ -5,7 +5,14 @@
     "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
-            "extensions": [],
+            "extensions": [
+                // python extension
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-python-envs",
+                "njpwerner.autodocstring",
+                "kevinrose.vsc-python-indent"
+            ],
             "settings": {}
         }
     }
