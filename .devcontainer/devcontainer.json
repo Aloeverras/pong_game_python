@@ -2,5 +2,44 @@
     "name" : "Pong game devcontainer",
     "service" : "devcontainer",
     "dockerComposeFile" : "../docker-compose.yml",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // python extension
+                "ms-python.python",
+                "ms-python.debugpy",
+                "ms-python.vscode-python-envs",
+                "njpwerner.autodocstring",
+                "kevinrose.vsc-python-indent",
+                "mgesbert.python-path",
+
+                // git extentions
+                "eamodio.gitlens",
+                "christian-kohler.path-intellisense"
+            ],
+            "settings": {
+
+                // editor settings
+                "editor.cursorBlinking": "solid",
+                "editor.smoothScrolling": true,
+                "editor.minimap.enabled": false,
+                "editor.renderLineHighlight": "all",
+                "editor.formatOnSave": true,
+                "editor.bracketPairColorization.enabled": true,
+                "editor.guides.bracketPairs": "active",
+
+                //workbench setting
+                "workbench.startupEditor": "none",
+
+                // python settings
+                "[python]" : {
+                    "editor.defaultFormatter": "KevinRose.vsc-python-indent",
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": "explicit"
+                    }
+                }
+            }
+        }
+    }
 }
