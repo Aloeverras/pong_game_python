@@ -9,7 +9,8 @@ class RunnerService:
         try:
             self.runner.start_runner_pong_game()
         except Exception as e:
-            print(e)    
+            print(e) 
+            print(e.__cause__)   
     
     @property
     def get_runner_pong_game(self) -> RunnerPongGamePort:

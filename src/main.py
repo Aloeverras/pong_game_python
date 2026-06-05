@@ -1,4 +1,10 @@
-white = (255, 255, 255)
-black = (0, 0, 0)
+from domaine.services.RunnerService import RunnerService
+from adaptaters.PygameRunnerPongGameAdaptater import PygameRunnerPongGameAdaptater
 
-print("Hello world")
+
+pong_game = PygameRunnerPongGameAdaptater()
+run_service = RunnerService(runner=pong_game)
+        
+print(" --- start game --- ")
+        
+run_service.start()      
