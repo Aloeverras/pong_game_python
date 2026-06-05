@@ -1,4 +1,5 @@
 {
     "name" : "Pong game devcontainer",
-    "service" : "devcontainer"
+    "service" : "devcontainer",
+    "dockerComposeFile" : "../docker-compose.yml"
 }
