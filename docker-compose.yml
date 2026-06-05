@@ -17,4 +17,6 @@ services:
       - XDG_RUNTIME_DIR=/mnt/wslg/runtime-dir
       - PULSE_SERVER=/mnt/wslg/PulseServer
     volumes:
-      - .:/workspace    
+      - .:/workspace 
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /mnt/wslg:/mnt/wslg   
