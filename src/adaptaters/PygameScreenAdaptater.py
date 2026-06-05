@@ -1,9 +1,13 @@
 from dataclasses import dataclass
+from domaine.ports.DisplayScreenPongGamePort import DisplayScreenPongGamePort
 
 @dataclass
-class PygameScreenAdaptater:
+class PygameScreenAdaptater(DisplayScreenPongGamePort):
     width_screen : int = 800
     height_screen : int = 800
+    
+    def display_screen_pong_game(self, width, height):
+        pass
     
     @property
     def get_width_screen(self) -> int:
