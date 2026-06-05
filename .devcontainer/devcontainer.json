@@ -30,7 +30,15 @@
                 "editor.guides.bracketPairs": "active",
 
                 //workbench setting
-                "workbench.startupEditor": "none"
+                "workbench.startupEditor": "none",
+
+                // python settings
+                "[python]" : {
+                    "editor.defaultFormatter": "KevinRose.vsc-python-indent",
+                    "editor.codeActionsOnSave": {
+                        "source.organizeImports": "explicit"
+                    }
+                }
             }
         }
     }
