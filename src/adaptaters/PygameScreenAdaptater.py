@@ -6,9 +6,9 @@ class PygameScreenAdaptater:
     height_screen : int = 800
     
     @property
-    def get_width_screen(self):
+    def get_width_screen(self) -> int:
         return self.width_screen
     
     @property
-    def get_height_screen(self):
+    def get_height_screen(self) -> int:
         return self.height_screen
