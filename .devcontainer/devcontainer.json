@@ -11,7 +11,12 @@
                 "ms-python.debugpy",
                 "ms-python.vscode-python-envs",
                 "njpwerner.autodocstring",
-                "kevinrose.vsc-python-indent"
+                "kevinrose.vsc-python-indent",
+                "mgesbert.python-path",
+
+                // git extentions
+                "eamodio.gitlens",
+                "christian-kohler.path-intellisense"
             ],
             "settings": {}
         }
