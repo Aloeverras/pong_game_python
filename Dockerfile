@@ -16,7 +16,18 @@ ARG PACKAGES
 
 RUN /bin/bash -c "set -eux" && \
     apt-get update && \
-    apt-get install -y --no-install-recommends sudo ${PACKAGES} && \
+    apt-get install -y --no-install-recommends \
+    sudo \
+    libx11-dev \
+    libxext-dev \
+    libxrandr-dev \
+    libxrender-dev \
+    libxinerama-dev \
+    libxi-dev \
+    libxcursor-dev \
+    libxss-dev \
+    libgl1-mesa-dev \
+    ${PACKAGES} && \
     apt-get upgrade && \
     sudo groupadd -g $GROUPID $GROUPNAME && \
     sudo useradd -u ${USERID} -g ${GROUPNAME} -m -s /bin/bash ${USERNAME} && \
