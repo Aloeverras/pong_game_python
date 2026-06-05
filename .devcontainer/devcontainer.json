@@ -1,3 +1,4 @@
 {
-    "name" : "Pong game devcontainer"
+    "name" : "Pong game devcontainer",
+    "service" : "devcontainer"
 }
