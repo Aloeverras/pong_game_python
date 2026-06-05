@@ -15,3 +15,5 @@ class PygameRunnerPongGameAdaptater(RunnerPongGamePort):
         
         speed_ball_x = 7 * (-1) **(pygame.time.get_ticks() % 2)
         speed_ball_y = 7 * (-1) **(pygame.time.get_ticks() % 2)
+        
+        palette_speed = 7
